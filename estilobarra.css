@@ -1,12 +1,14 @@
-/*
+
 nav a {
-    color: #1d5324;
+    color: #f4f8f5;
     text-decoration: none;
     padding: 5px;
   }
   nav a:hover {
     color: #1BF7DE;
   }
+
+/*
   header {
     background-color: #333;
     color: #af9fd4;
