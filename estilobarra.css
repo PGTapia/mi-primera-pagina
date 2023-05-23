@@ -1,0 +1,171 @@
+/*
+nav a {
+    color: #1d5324;
+    text-decoration: none;
+    padding: 5px;
+  }
+  nav a:hover {
+    color: #1BF7DE;
+  }
+  header {
+    background-color: #333;
+    color: #af9fd4;
+    text-align: center;
+    padding: 20px;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  nav a {
+    color: #1eaa67;
+    text-decoration: none;
+    padding: 5px;
+  }
+  nav a:hover {
+    color: #19776c;
+  }
+
+  body{
+    background-color:burlywood;
+  }
+
+  @media (max-width: 767px){
+    header {
+        background-color: #333;
+    }
+  }
+
+  @media (max-width: 767px){
+    nav {
+        font-size: 16px;
+    }
+  }
+
+  @media (min-width: 1200px){
+    header{
+        width: 1200px;
+    }
+  }
+  */
+.body{
+  background-color: rgb(136, 107, 71);
+}
+.flex-container{
+  flex-direction: row;
+  border: 5px darkkhaki;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+.caja {
+    border: 5px darkkhaki; 
+    background-color:crimson;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 120px;
+    height: 120px;
+    color: white;
+}
+.container-nav {
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    background-color: black;
+}
+  
+  
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+  
+  
+.brand {
+    display: flex;
+    align-items: center;
+}
+  
+  
+li>a {
+    padding: 8px 24px;
+}
+  
+  
+li {
+    list-style-type: none;
+}
+  
+  
+a {
+    color: white;
+    text-decoration:none;
+}
+  
+  
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+  
+  
+.button-menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+.column {
+    flex: 100%;
+}
+  
+  
+.nav-links {
+    display: none;
+}
+  
+  
+.button-menu-toggle {
+    display: block;
+    background-color: white;
+    border:none;
+    border-radius: 50px;
+    padding: 0 24px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.nav-links.nav-links-responsive {
+    position: absolute;
+    display: flex;
+    background-color: rgba(20,20,20,0.95);
+    width: 100%;
+    height: 100%;
+    top: 70px;
+    left: 0;
+    flex-direction: column;
+    padding-top: 200px;
+    align-items: center;
+    gap:70px;
+    font-size: 40px;
+    }
+}
+
+document.querySelector("button.button-menu-toggle")
+    .addEventListener("click", 
+    function() {
+        document.querySelector(".nav-links").
+        classList.toggle("nav-links-responsive")})
